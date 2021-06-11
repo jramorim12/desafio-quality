@@ -54,4 +54,6 @@ public class HouseDTO {
     public void setRooms(List<RoomDTO> rooms) {
         this.rooms = rooms;
     }
+
+
 }

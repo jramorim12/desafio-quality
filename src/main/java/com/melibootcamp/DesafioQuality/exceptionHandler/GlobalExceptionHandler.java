@@ -1,5 +1,6 @@
 package com.melibootcamp.DesafioQuality.exceptionHandler;
 
+import jdk.jshell.spi.ExecutionControlProvider;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
@@ -15,19 +16,9 @@ import java.util.List;
 @ControllerAdvice
 public class GlobalExceptionHandler{
 
-    @ExceptionHandler(UnexpectedTypeException.class)
-    public ResponseEntity UnexpectedTypeException(UnexpectedTypeException e, WebRequest request){
+    @ExceptionHandler({UnexpectedTypeException.class, HttpMessageNotReadableException.class, DistrictNotFoundException.class})
+    public ResponseEntity UnexpectedTypeException(Exception e, WebRequest request){
         return new ResponseEntity<String>(e.toString(), HttpStatus.BAD_REQUEST);
-    }
-
-    @ExceptionHandler(HttpMessageNotReadableException.class)
-    public ResponseEntity HttpMessageNotReadableException(HttpMessageNotReadableException e, WebRequest request){
-        return new ResponseEntity<String>(e.toString(), HttpStatus.BAD_REQUEST);
-    }
-
-    @ExceptionHandler(DistrictNotFoundException.class)
-    public ResponseEntity DistrictNotFoundException(DistrictNotFoundException e, WebRequest request){
-        return new ResponseEntity<String>(e.getMessage(), HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)

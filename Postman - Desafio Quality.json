@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "ea8de9c4-f1c1-44a0-8bd0-3c8cc1b612b5",
+		"name": "Desafio Quality - Avaliador de Casas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "US 0001",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Nome da Casa\",\n    \"district\" : \"Bairro 01\",\n    \"rooms\" : [\n        {\n            \"name\" : \"Quarto\",\n            \"width\" :  4,\n            \"length\" : 5\n        },\n        {\n            \"name\" : \"Cozinha\",\n            \"width\" :  3,\n            \"length\" : 6\n        },\n                {\n            \"name\" : \"Garagem\",\n            \"width\" :  5,\n            \"length\" : 6\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/getHouseArea",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getHouseArea"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "US 0002",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Nome da Casa\",\n    \"district\" : \"Bairro 01\",\n    \"rooms\" : [\n        {\n            \"name\" : \"Quarto\",\n            \"width\" :  4,\n            \"length\" : 5\n        },\n        {\n            \"name\" : \"Cozinha\",\n            \"width\" :  3,\n            \"length\" : 6\n        },\n                {\n            \"name\" : \"Garagem\",\n            \"width\" :  5,\n            \"length\" : 6\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/getHousePrice",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getHousePrice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "US 0003",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Nome da Casa\",\n    \"district\" : \"Bairro 01\",\n    \"rooms\" : [\n        {\n            \"name\" : \"Quarto\",\n            \"width\" :  4,\n            \"length\" : 5\n        },\n        {\n            \"name\" : \"Cozinha\",\n            \"width\" :  3,\n            \"length\" : 6\n        },\n                {\n            \"name\" : \"Garagem\",\n            \"width\" :  5,\n            \"length\" : 6\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/getBiggestRoom",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getBiggestRoom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "US 0004",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Nome da Casa\",\n    \"district\" : \"Bairro 01\",\n    \"rooms\" : [\n        {\n            \"name\" : \"Quarto\",\n            \"width\" :  4,\n            \"length\" : 5\n        },\n        {\n            \"name\" : \"Cozinha\",\n            \"width\" :  3,\n            \"length\" : 6\n        },\n                {\n            \"name\" : \"Garagem\",\n            \"width\" :  5,\n            \"length\" : 6\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/areaEachRoom",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"areaEachRoom"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

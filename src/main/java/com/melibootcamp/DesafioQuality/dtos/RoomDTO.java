@@ -14,7 +14,7 @@ public class RoomDTO {
     @Min(value = 1, message = "The field 'width' in rooms must have, at least, 1 meter")
     private Double width;
 
-    @NotNull(message = "The field 'width' in rooms must not be null")
+    @NotNull(message = "The field 'width' in rooms must not be empty")
     @Max(value = 33, message = "The field 'length' in rooms must not exceed 33 meters")
     @Min(value = 1, message = "The field 'length' in rooms must have, at least, 1 meter")
     private Double length;

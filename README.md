@@ -39,7 +39,7 @@ Todas as funcionalidades recebem o mesmo Payload.
 
 ### Validade dos parâmetros
   
-Os parâmetros descritos acima, só serão considerados válidos seguindo as seguintes condições. A validação da existencia do bairro inserido, é realizada apenas na funcionalidade US 0002.
+Os parâmetros descritos acima, só serão considerados válidos seguindo as seguintes condições. A validação da existencia do bairro inserido é realizada apenas na funcionalidade US 0002.
   
 | Parâmetro | Obrigatório | Validação | Mensagem de Erro |
 | :---: | :---: | :--- | :--- |
